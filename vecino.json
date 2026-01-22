@@ -1,0 +1,16 @@
+{
+    "3": {
+        "nombre": "daniel",
+        "apellido": "Sada",
+        "telefono": "asd",
+        "direccion": "adsd",
+        "tipo_usuario": "Administrador"
+    },
+    "32": {
+        "nombre": "Sfds",
+        "apellido": "Sadsf",
+        "telefono": "dfsg",
+        "direccion": "fdsds",
+        "tipo_usuario": "Administrador"
+    }
+}

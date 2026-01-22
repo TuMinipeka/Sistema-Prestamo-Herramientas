@@ -1,0 +1,9 @@
+{
+    "2": {
+        "nombre": "Martillo",
+        "categoria": "Construccion",
+        "cantidad": 1,
+        "estado": "Activa",
+        "valor": 30000.0
+    }
+}

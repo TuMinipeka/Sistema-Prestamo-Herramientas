@@ -1,0 +1,5 @@
+2026-01-21 19:56:31 | INFO | Inicio de sesión como Administrador
+2026-01-21 20:02:11 | INFO | Usuario Administrador registró vecino 32
+2026-01-21 20:31:20 | INFO | Préstamo 345 creado para usuario 3
+2026-01-21 20:33:11 | INFO | Herramienta 2 creada
+2026-01-21 20:33:59 | INFO | Préstamo 4 creado para usuario 32
