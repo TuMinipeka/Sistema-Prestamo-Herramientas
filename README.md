@@ -68,3 +68,6 @@ Los eventos del sistema se registran en:
 ### Ejecución
 ```bash
 python main.py
+
+
+
