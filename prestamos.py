@@ -9,22 +9,26 @@ ARCHIVO_USUARIOS = "vecino.json"
 
 def crear_prestamo(usuario_actual):
     if usuario_actual["tipo"] != "Administrador":
+        registrar_log("INFO", "Intento Invalido")
         print(" Solo el administrador puede registrar préstamos.")
         return
 
     print("\n=== REGISTRAR PRÉSTAMO ===")
-
-    id_prestamo = input("ID del préstamo: ")
-    usuario_id = input("ID del vecino: ")
-    herramienta_id = input("ID de la herramienta: ")
-
     try:
+        id_prestamo = input("Nombre Del Usuario (Completo)").lower()
+        usuario_id = int(input("ID del vecino: "))
+        herramienta_id = int(input("ID de la herramienta: "))
+
+    
         cantidad = int(input("Cantidad a prestar: "))
         if cantidad <= 0:
             print("Cantidad inválida.")
             return
+    
     except ValueError:
         print("Cantidad debe ser numérica.")
+    except Exception as e:
+        print("Error inesperado ", e)
         return
 
     fecha_inicio = datetime.now().strftime("%Y-%m-%d")
@@ -32,7 +36,7 @@ def crear_prestamo(usuario_actual):
     observaciones = input("Observaciones: ")
     registrar_log(
     "INFO",
-    f"Préstamo {id_prestamo} creado para usuario {usuario_id}"
+    f"Préstamo {id_prestamo} creado para usuario de ID {usuario_id} con la siguiemte obcervacion: {observaciones}"
 )
 
     # Cargar archivos
@@ -89,9 +93,12 @@ def crear_prestamo(usuario_actual):
     print(" Préstamo registrado correctamente.")
 
 def devolver_prestamo(usuario_actual):
+
     if usuario_actual["tipo"] != "Administrador":
-        print(" Solo el administrador puede registrar devoluciones.")
+        registrar_log("INFO", "Intento Invalido")
+        print(" Solo el administrador puede Devolver Prestamos.")
         return
+
 
     id_prestamo = input("ID del préstamo a devolver: ")
 
@@ -143,10 +150,11 @@ def listar_prestamos():
             print(f"Devolución: {p['fecha_devolucion']}")
             print(f"Estado: {p['estado']}")
             print(f"Obs: {p['observaciones']}")
-
+        registrar_log(
+        "INFO",
+        f"Prestamo Listado")
     except FileNotFoundError:
         print("No hay préstamos registrados.")
-
 def menu_prestamos(usuario_actual):
     while True:
         print("\n===== MENÚ PRÉSTAMOS =====")

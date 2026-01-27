@@ -5,5 +5,12 @@
         "cantidad": 23,
         "estado": "En reparación",
         "valor": 23.0
+    },
+    "12": {
+        "nombre": "Pentagono",
+        "categoria": "geometrico",
+        "cantidad": 3,
+        "estado": "Activa",
+        "valor": 2000.0
     }
 }

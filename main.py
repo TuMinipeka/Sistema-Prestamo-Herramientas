@@ -16,7 +16,7 @@ while True:
     while True:
         try:
             print("\n======-MENÚ-======")
-            print (f"* Bienvenido: {usuario["tipo"]} *")
+            print (f" Bienvenido: {usuario['tipo']} ")
             print("1. Gestion De Vecinos")
             print("2. Gestion De Herramientas")
             print("3. Gestion De Préstamos")

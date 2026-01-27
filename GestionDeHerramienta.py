@@ -2,7 +2,6 @@ from logs import registrar_log
 import json
 import os
 def crear_herramienta():
-
     print("\n===-Registrar Herramienta-===")
     id_herramienta = input("ID De La Herramienta: ")
     nombre = input("Nombre: ").capitalize()
@@ -80,11 +79,11 @@ def listar_herramienta():
         for id_h , h in datos.items():
             print ("---------------------------------")
             print(f"ID: {id_h}")
-            print(f"Nombre: {h["nombre"]}")
-            print(f"Categoria: {h["categoria"]}")
-            print(f"Cantidad: {h["cantidad"]}")
-            print(f"Estado: {h["estado"]}")
-            print(f"Valor: {h["valor"]}")
+            print(f"Nombre: {h['nombre']}")
+            print(f"Categoria: {h['categoria']}")
+            print(f"Cantidad: {h['cantidad']}")
+            print(f"Estado: {h['estado']}")
+            print(f"Valor: {h['valor']}")
     except FileNotFoundError:
         print("No Existen Herramientas Registradas")
 
@@ -98,11 +97,11 @@ def buscar_herramienta():
             h = datos[id_h]
             print("///--HERRAMIENTA ENCONTRADA--///")
             print(f"ID: {id_h}")
-            print(f"Nombre: {h["nombre"]}")
-            print(f"Categoria: {h["categoria"]}")
-            print(f"Cantidad: {h["cantidad"]}")
-            print(f"Estado: {h["estado"]}")
-            print(f"Valor: {h["valor"]}")
+            print(f"Nombre: {h['nombre']}")
+            print(f"Categoria: {h['categoria']}")
+            print(f"Cantidad: {h['cantidad']}")
+            print(f"Estado: {h['estado']}")
+            print(f"Valor: {h['valor']}")
         else:
             print("No Existe Herramienta con ese ID")
     except FileNotFoundError:
@@ -121,10 +120,10 @@ def actualizar():
         herramientas = datos[id_h]
         print("\n (Enter Para Mantener El Dato Actual)")
         print(f"ID: {id_h}")
-        nombre_actualizado = input(f"nombre: [{herramientas["nombre"]}]") or herramientas["nombre"]
-        categoria_actualizada = input(f"categoria: [{herramientas["categoria"]}]") or herramientas["categoria"]
-        cantidad_actualizada= input(f"cantidad: [{herramientas["cantidad"]}]") or herramientas["cantidad"]
-        valor_actualizado= input (f"valor: [{herramientas["valor"]}]") or herramientas["Valor"]
+        nombre_actualizado = input(f"nombre: [{herramientas['nombre']}]") or herramientas["nombre"]
+        categoria_actualizada = input(f"categoria: [{herramientas['categoria']}]") or herramientas["categoria"]
+        cantidad_actualizada= input(f"cantidad: [{herramientas['cantidad']}]") or herramientas["cantidad"]
+        valor_actualizado= input (f"valor: [{herramientas['valor']}]") or herramientas["Valor"]
         estado_op = input(f"Opción actual [{herramientas['estado']}]: ")
 
 
@@ -163,7 +162,7 @@ def eliminar_herramientas():
             print("No Hay Herramienta Registrado Con Ese ID")
             return
         herramienta= datos[id_h]
-        print(f"nombre: {herramienta["nombre"]} {herramienta["categoria"]}")
+        print(f"nombre: {herramienta['nombre']} {herramienta['categoria']}")
 
         confirmar = input ("Seguro Que Desea Eliminar Esa Herramienta (si/no): ").lower()
         if confirmar !="si":

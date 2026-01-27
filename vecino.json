@@ -5,5 +5,12 @@
         "telefono": "23",
         "direccion": "23",
         "tipo_usuario": "Administrador"
+    },
+    "12": {
+        "nombre": "Daniel",
+        "apellido": "Mayo",
+        "telefono": "12312321",
+        "direccion": "calle 23",
+        "tipo_usuario": "Administrador"
     }
 }

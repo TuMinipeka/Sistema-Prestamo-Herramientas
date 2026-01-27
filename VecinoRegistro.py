@@ -98,11 +98,11 @@ def listas_vecinos ():
         for id_veci, v in datos.items():
             print ("---------------------------------")
             print(f"ID: {id_veci} ")
-            print(f"Nombre: {v["nombre"]}")
-            print(f"Apellido: {v["apellido"]}")
-            print(f"Telefono: {v["telefono"]}")
-            print(f"Dirección: {v["direccion"]}")
-            print(f"Tipo De Usuario: {v["tipo_usuario"]}")
+            print(f"Nombre: {v['nombre']}")
+            print(f"Apellido: {v['apellido']}")
+            print(f"Telefono: {v['telefono']}")
+            print(f"Dirección: {v['direccion']}")
+            print(f"Tipo De Usuario: {v['tipo_usuario']}")
     except FileNotFoundError:
         print("Ningún Vecino Se Ha Registrado.")
 #buscar id Vecino
@@ -133,14 +133,13 @@ def actualizar_vecino():
         with open("vecino.json","r",encoding="utf-8") as archivo:
              datos=json.load(archivo)
         if id_buscar not in datos:
-             print("No existe algún vecino con ese ID")
-        return
+            return print("No existe algún vecino con ese ID")
         vecino = datos [id_buscar]
         print("\n (Enter Para Mantener El Dato Actual)")
-        nuevo_nombre = input (f"Nombre [{vecino["nombre"]}]:") or vecino["nombre"]
-        nuevo_apellido = input (f"Apellido[{vecino["apellido"]}]:") or vecino["apellido"]
-        nuevo_telefono = input (f"Telefono[{vecino["telefono"]}]:") or vecino["telefono"]
-        nuevo_direccion = input (f"Direccion[{vecino["direccion"]}]:") or vecino["direccion"]
+        nuevo_nombre = input (f"Nombre [{vecino['nombre']}]:") or vecino["nombre"]
+        nuevo_apellido = input (f"Apellido[{vecino['apellido']}]:") or vecino["apellido"]
+        nuevo_telefono = input (f"Telefono[{vecino['telefono']}]:") or vecino["telefono"]
+        nuevo_direccion = input (f"Direccion[{vecino['direccion']}]:") or vecino["direccion"]
         
         print("Tipo de usuario:")
         print("1. Administrador")
@@ -181,7 +180,7 @@ def eliminar():
             print("No Hay Vecino Registrado Con Ese ID")
             return
         vecino= datos[id_buscar]
-        print(f"Vecino: {vecino["nombre"]} {vecino["apellido"]}")
+        print(f"Vecino: {vecino['nombre']} {vecino['apellido']}")
 
         confirmar = input ("Seguro Que Desea Eliminar Ese Vecino (si/no): ").lower()
         if confirmar !="si":

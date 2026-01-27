@@ -19,3 +19,32 @@
 2026-01-26 08:47:15 | INFO | Usuario Administrador registró vecino 23
 2026-01-26 08:47:36 | INFO | Herramienta 23 creada
 2026-01-26 08:48:21 | INFO | Préstamo 23 creado para usuario 23
+2026-01-27 08:38:54 | INFO | Inicio de sesión como Administrador
+2026-01-27 08:46:46 | INFO | Préstamo 4 creado para usuario 23
+2026-01-27 08:50:22 | INFO | Inicio de sesión como Administrador
+2026-01-27 08:52:06 | INFO | Préstamo daniel santiago creado para usuario 23
+2026-01-27 09:03:05 | INFO | Usuario Administrador registró vecino 12
+2026-01-27 09:03:40 | INFO | Herramienta 12 creada
+2026-01-27 09:04:16 | INFO | Préstamo daniel mayorga creado para usuario 12
+2026-01-27 09:04:20 | INFO | Prestamo Li
+stado
+2026-01-27 09:05:47 | INFO | Préstamo daniel mayorga devuelto
+2026-01-27 09:14:41 | INFO | Inicio de sesión como Residente
+2026-01-27 09:18:02 | INFO | Inicio de sesión como Residente
+2026-01-27 09:19:35 | INFO | Inicio de sesión como Residente
+2026-01-27 09:21:14 | INFO | Inicio de sesión como Residente
+2026-01-27 09:22:47 | INFO | Inicio de sesión como Residente
+2026-01-27 09:23:54 | INFO | Intento Invalido
+2026-01-27 09:24:49 | INFO | Inicio de sesión como Residente
+2026-01-27 09:24:51 | INFO | Intento Invalido
+2026-01-27 09:24:52 | INFO | Intento Invalido
+2026-01-27 09:25:03 | INFO | Intento Invalido
+2026-01-27 09:25:03 | INFO | Intento Invalido
+2026-01-27 09:25:03 | INFO | Intento Invalido
+2026-01-27 09:25:04 | INFO | Intento Invalido
+2026-01-27 09:25:04 | INFO | Intento Invalido
+2026-01-27 09:26:31 | INFO | Inicio de sesión como Residente
+2026-01-27 09:26:34 | INFO | Intento Invalido
+2026-01-27 09:26:35 | INFO | Intento Invalido
+2026-01-27 09:26:35 | INFO | Intento Invalido
+2026-01-27 09:26:36 | INFO | Intento Invalido

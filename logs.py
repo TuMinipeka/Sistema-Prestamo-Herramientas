@@ -4,7 +4,7 @@ ARCHIVO_LOGS = "logs.txt"
 
 def registrar_log(nivel, mensaje):
     """
-    nivel: INFO | WARNING | ERROR
+    nivel: INFO | WARNING | ERROR 
     mensaje: texto descriptivo del evento
     """
     fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
