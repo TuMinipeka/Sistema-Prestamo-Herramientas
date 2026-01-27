@@ -1,5 +1,21 @@
-2026-01-21 19:56:31 | INFO | Inicio de sesión como Administrador
-2026-01-21 20:02:11 | INFO | Usuario Administrador registró vecino 32
-2026-01-21 20:31:20 | INFO | Préstamo 345 creado para usuario 3
-2026-01-21 20:33:11 | INFO | Herramienta 2 creada
-2026-01-21 20:33:59 | INFO | Préstamo 4 creado para usuario 32
+
+2026-01-26 07:43:43 | WARNING | Contraseña incorrecta de administrador
+2026-01-26 07:43:46 | INFO | Inicio de sesión como Administrador
+2026-01-26 07:46:36 | INFO | Inicio de sesión como Residente
+2026-01-26 07:47:00 | WARNING | Administrador eliminó vecino 32
+2026-01-26 07:47:00 | WARNING | Residente intentó eliminar un vecino
+2026-01-26 08:01:28 | INFO | Inicio de sesión como Administrador
+2026-01-26 08:01:59 | INFO | Usuario Administrador registró vecino 1
+2026-01-26 08:02:32 | INFO | Usuario Residente registró vecino 2
+2026-01-26 08:03:40 | INFO | Inicio de sesión como Residente
+2026-01-26 08:31:36 | WARNING | Contraseña incorrecta de administrador
+2026-01-26 08:31:37 | WARNING | Contraseña incorrecta de administrador
+2026-01-26 08:31:49 | WARNING | Contraseña incorrecta de administrador
+2026-01-26 08:31:49 | ERROR | Acceso administrador bloqueado
+2026-01-26 08:31:55 | WARNING | Contraseña incorrecta de administrador
+2026-01-26 08:32:00 | INFO | Inicio de sesión como Administrador
+2026-01-26 08:43:24 | INFO | Inicio de sesión como Residente
+2026-01-26 08:45:57 | INFO | Inicio de sesión como Administrador
+2026-01-26 08:47:15 | INFO | Usuario Administrador registró vecino 23
+2026-01-26 08:47:36 | INFO | Herramienta 23 creada
+2026-01-26 08:48:21 | INFO | Préstamo 23 creado para usuario 23

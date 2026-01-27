@@ -6,7 +6,7 @@ def crear_herramienta():
     print("\n===-Registrar Herramienta-===")
     id_herramienta = input("ID De La Herramienta: ")
     nombre = input("Nombre: ").capitalize()
-    categoria = input("Categoría: ").capitalize()
+    categoria = input("Categoría: ")
     try:
         cantidad = int(input("Cantidad disponible: "))
         if cantidad < 0:
@@ -27,16 +27,22 @@ def crear_herramienta():
     print("3. Fuera de servicio")
 
     estado_op = input("Seleccione estado: ")
-
-    if estado_op == "1":
-        estado = "Activa"
-    elif estado_op == "2":
-        estado = "En reparación"
-    elif estado_op == "3":
-        estado = "Fuera de servicio"
-    else:
-        print("Estado inválido.")
-        return
+    try:
+        if estado_op == "1":
+            estado = "Activa"
+        elif estado_op == "2":
+            estado = "En reparación"
+        elif estado_op == "3":
+            estado = "Fuera de servicio"
+        else:
+            print("Estado inválido.")
+            return
+    except KeyboardInterrupt:
+        print("Error")
+    except ValueError:
+        print("Ingrese Solo Numeros")
+    except Exception as e:
+        print("Error Inesperado, ",e)
     try:
         datos = {}
         if os.path.exists("herramientas.json"):

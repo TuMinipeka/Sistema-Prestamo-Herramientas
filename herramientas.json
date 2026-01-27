@@ -1,9 +1,9 @@
 {
-    "2": {
-        "nombre": "Martillo",
-        "categoria": "Construccion",
-        "cantidad": 1,
-        "estado": "Activa",
-        "valor": 30000.0
+    "23": {
+        "nombre": "23",
+        "categoria": "23",
+        "cantidad": 23,
+        "estado": "En reparación",
+        "valor": 23.0
     }
 }
